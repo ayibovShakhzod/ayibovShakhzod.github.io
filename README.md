@@ -1,5 +1,7 @@
 # Hello my name is Shakhzod 
-# I am Frontend developer 
-portfolio: https://shakhzodprogrammer.github.io/portfolio/
+portfolio website: https://shakhzodprogrammer.github.io/portfolio/
+<hr>
+# I am Frontend developer
+
 
 
