@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_32" data-name="Rectangle 32" width="22" height="22" transform="translate(171 942)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_7" data-name="Mask Group 7" transform="translate(-171 -942)" clip-path="url(#clip-path)">
+    <g id="twitter" transform="translate(171 942)">
+      <g id="Group_38" data-name="Group 38" transform="translate(2.603 2.115)">
+        <path id="Path_43" data-name="Path 43" d="M16.795,3.678a7.179,7.179,0,0,1-1.984.544,3.424,3.424,0,0,0,1.515-1.9,6.881,6.881,0,0,1-2.183.833A3.443,3.443,0,0,0,8.186,5.507a3.545,3.545,0,0,0,.08.785,9.746,9.746,0,0,1-7.1-3.6,3.444,3.444,0,0,0,1.058,4.6A3.4,3.4,0,0,1,.672,6.868v.038A3.459,3.459,0,0,0,3.43,10.289a3.437,3.437,0,0,1-.9.113,3.044,3.044,0,0,1-.652-.059,3.476,3.476,0,0,0,3.217,2.4A6.918,6.918,0,0,1,.824,14.21,6.449,6.449,0,0,1,0,14.163a9.693,9.693,0,0,0,5.282,1.545,9.732,9.732,0,0,0,9.8-9.8c0-.152-.005-.3-.013-.445A6.869,6.869,0,0,0,16.795,3.678Z" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

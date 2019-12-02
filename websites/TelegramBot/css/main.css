@@ -1,0 +1,710 @@
+@font-face {
+  font-family: "Gilroy ExtraBold";
+  src: url("../fonts/Gilroy-ExtraBold.otf") format("otf"); }
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("../fonts/Gilroy-Light.otf") format("otf"); }
+body .mainTitle {
+  color: #000;
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 50px; }
+
+body {
+  font-size: 100%/16px;
+  color: #0088cc;
+  font-family: "Gilroy Light", sans-serif;
+  background-color: #fff; }
+  body header {
+    background-image: url("../img/headBack.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right top; }
+    body header .nav {
+      position: absolute; }
+      body header .nav .container .row .col-md-12 {
+        padding-top: 25px; }
+        body header .nav .container .row .col-md-12 .navbar .navbar-brand {
+          color: #0088cc;
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 1.875em;
+          margin-right: 2.5em;
+          font-family: "Gilroy ExtraBold", sans-serif; }
+        body header .nav .container .row .col-md-12 .navbar .navbar-collapse {
+          background-color: transparent; }
+          body header .nav .container .row .col-md-12 .navbar .navbar-collapse .navbar-nav .nav-item {
+            margin: 0 0.8em; }
+            body header .nav .container .row .col-md-12 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+              color: #0088cc;
+              font-size: 1.5em;
+              font-weight: 300; }
+          body header .nav .container .row .col-md-12 .navbar .navbar-collapse .float-right {
+            margin-left: auto; }
+            body header .nav .container .row .col-md-12 .navbar .navbar-collapse .float-right .nav-item {
+              margin-right: 0; }
+              body header .nav .container .row .col-md-12 .navbar .navbar-collapse .float-right .nav-item .nav-link {
+                line-height: 1;
+                margin-bottom: 0;
+                font-weight: 700;
+                color: #fff;
+                font-size: 1.125rem;
+                font-family: "Gilroy ExtraBold", sans-serif; }
+                body header .nav .container .row .col-md-12 .navbar .navbar-collapse .float-right .nav-item .nav-link p {
+                  margin-bottom: 0;
+                  color: #fff;
+                  font-size: 1.125em;
+                  font-weight: 300;
+                  -ms-text-align-last: right;
+                  text-align: right;
+                  font-family: "Gilroy Light", sans-serif; }
+    body header .sticky {
+      background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+      box-shadow: 0 0 5px #bdbdbd;
+      left: 0;
+      padding: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999; }
+      body header .sticky .container .row .col-md-12 {
+        padding-top: 0px; }
+        body header .sticky .container .row .col-md-12 .navbar .navbar-collapse .float-right .nav-item .nav-link {
+          color: #0088cc; }
+          body header .sticky .container .row .col-md-12 .navbar .navbar-collapse .float-right .nav-item .nav-link p {
+            color: #0088cc; }
+    body header .section-1 {
+      padding-top: 100px; }
+      body header .section-1 .row {
+        padding-top: 80px; }
+        body header .section-1 .row .col-7 .firstSec .title {
+          font-size: 2.5em;
+          font-weight: bold;
+          margin-bottom: 25px;
+          font-family: "Gilroy ExtraBold", sans-serif; }
+        body header .section-1 .row .col-7 .firstSec .text {
+          font-size: 1.5625em;
+          font-weight: 400;
+          color: #4c4c4c;
+          margin-bottom: 35px; }
+        body header .section-1 .row .col-7 .firstSec .btn-link {
+          color: #fff;
+          font-size: 1.25em;
+          padding: 1.7% 8.1%;
+          border-radius: 10px;
+          font-weight: 300;
+          background-color: #0088cc;
+          margin-left: 220px; }
+          body header .section-1 .row .col-7 .firstSec .btn-link:hover {
+            text-decoration: none;
+            background-color: #006baf; }
+        body header .section-1 .row .col-5 .secondSec {
+          float: right;
+          margin-right: 40px; }
+          body header .section-1 .row .col-5 .secondSec img {
+            display: block;
+            margin: 0 auto; }
+          body header .section-1 .row .col-5 .secondSec a {
+            width: 150px;
+            color: #fff;
+            display: block;
+            text-align: center;
+            font-size: 1.25625em;
+            text-decoration: underline; }
+    body header .section-2 {
+      margin-bottom: 60px; }
+      body header .section-2 .row {
+        padding-top: 240px; }
+        body header .section-2 .row .col-12 .firstSec-2 {
+          float: right;
+          width: 55%; }
+          body header .section-2 .row .col-12 .firstSec-2 .title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 25px;
+            font-family: "Gilroy ExtraBold", sans-serif; }
+          body header .section-2 .row .col-12 .firstSec-2 .imgDad {
+            float: right; }
+        body header .section-2 .row .col-12 .secondSec-2 {
+          background-color: #fff;
+          padding: 30px;
+          float: left;
+          width: 42%;
+          margin-top: 210px;
+          margin-left: 30px;
+          border-radius: 10px;
+          box-shadow: 0px 0px 15.75px 5.25px rgba(0, 0, 0, 0.29); }
+          body header .section-2 .row .col-12 .secondSec-2 p {
+            color: #4c4c4c;
+            line-height: 1.2; }
+    body header .section-3, body header .sec {
+      margin-bottom: 60px; }
+      body header .section-3 .row .col-4, body header .sec .row .col-4 {
+        color: #000;
+        margin-bottom: 20px; }
+        body header .section-3 .row .col-4 img, body header .sec .row .col-4 img {
+          display: block;
+          margin: 10px auto;
+          height: 199px;
+          width: auto; }
+        body header .section-3 .row .col-4 .title, body header .sec .row .col-4 .title {
+          margin: 20px 0;
+          font-size: 1.5em;
+          text-align: center;
+          font-family: "Gilroy ExtraBold", sans-serif; }
+        body header .section-3 .row .col-4 .text, body header .sec .row .col-4 .text {
+          text-align: center;
+          font-size: 1.125em; }
+        body header .section-3 .row .col-4 h5, body header .sec .row .col-4 h5 {
+          font-family: "Gilroy ExtraBold", sans-serif; }
+        body header .section-3 .row .col-4 ul, body header .sec .row .col-4 ul {
+          text-align: left;
+          padding-left: 5px;
+          margin-left: 10px; }
+          body header .section-3 .row .col-4 ul li, body header .sec .row .col-4 ul li {
+            font-family: "Gilroy Light", sans-serif; }
+    body header .section-4 .row .col-4 img {
+      height: 68px;
+      width: auto; }
+    body header .section-4 .row .col-4 .title {
+      font-size: 2em;
+      font-weight: 700;
+      font-family: "sans-serif", sans-serif; }
+    body header .section-4 .row .col-4 .text {
+      font-size: 1em;
+      font-style: oblique;
+      font-family: "sans-serif", sans-serif; }
+    body header .section-4 .row .col-4 h5 {
+      padding-left: 10px; }
+    body header .section-4 .row .col-4 ul {
+      padding-left: 15px; }
+      body header .section-4 .row .col-4 ul li {
+        font-family: "Gilroy Light", sans-serif; }
+  body main .mainSection-1 {
+    background-color: #0088cc;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff; }
+    body main .mainSection-1 .container .row .col-10 .mainTitle {
+      color: #fff;
+      margin-bottom: 20px; }
+    body main .mainSection-1 .container .row .col-10 .text {
+      font-size: 1.5em;
+      margin-bottom: 70px; }
+    body main .mainSection-1 .container .row .col-5 {
+      padding: 0 20px;
+      color: #0088cc; }
+      body main .mainSection-1 .container .row .col-5 .title {
+        font-size: 4.375em;
+        text-transform: uppercase;
+        font-family: "Gilroy ExtraBold", sans-serif;
+        margin-bottom: 0;
+        color: #fff;
+        line-height: 0.6;
+        text-align: center; }
+      body main .mainSection-1 .container .row .col-5 .cont {
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 10px; }
+        body main .mainSection-1 .container .row .col-5 .cont .contTitle {
+          margin: 30px 0;
+          font-size: 2.2em;
+          text-transform: uppercase;
+          text-align: center; }
+        body main .mainSection-1 .container .row .col-5 .cont .contText {
+          font-size: 1.3em; }
+        body main .mainSection-1 .container .row .col-5 .cont b {
+          font-size: 1.8em;
+          font-family: "Gilroy ExtraBold", sans-serif;
+          display: block;
+          margin-bottom: 10px; }
+        body main .mainSection-1 .container .row .col-5 .cont .contLink {
+          font-size: 1.2em;
+          text-decoration: none;
+          text-align: center;
+          display: block;
+          font-weight: 700;
+          text-transform: uppercase; }
+          body main .mainSection-1 .container .row .col-5 .cont .contLink:hover {
+            text-decoration: underline; }
+    body main .mainSection-1 .container .row .col-12 {
+      padding-top: 30px;
+      font-size: 1.5625em; }
+      body main .mainSection-1 .container .row .col-12 .text {
+        margin-bottom: 30px;
+        text-align: center; }
+      body main .mainSection-1 .container .row .col-12 .link {
+        background-color: #fff;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 17px;
+        margin: 0 auto;
+        display: block;
+        width: 40.6%;
+        color: #0088cc;
+        border-radius: 10px; }
+  body main .mainSection-2 {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    body main .mainSection-2 .container .row .col-12 .mainTitle {
+      color: #0088cc; }
+    body main .mainSection-2 .container .row .col-4 {
+      padding: 10px;
+      height: 357px;
+      margin-bottom: 20px; }
+      body main .mainSection-2 .container .row .col-4 .cont {
+        color: #000;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 3px; }
+        body main .mainSection-2 .container .row .col-4 .cont .headCont {
+          margin-bottom: 20px;
+          height: 80px; }
+          body main .mainSection-2 .container .row .col-4 .cont .headCont .imgCircle {
+            width: 71px;
+            height: 71px;
+            overflow: hidden;
+            border-radius: 50%;
+            display: inline-block;
+            float: left;
+            margin-right: 15px; }
+            body main .mainSection-2 .container .row .col-4 .cont .headCont .imgCircle img {
+              width: 100%; }
+          body main .mainSection-2 .container .row .col-4 .cont .headCont .info p {
+            font-size: 1.375em;
+            margin-bottom: 0;
+            line-height: 1.2; }
+          body main .mainSection-2 .container .row .col-4 .cont .headCont .info a {
+            font-size: 1.125em;
+            color: #5e628f; }
+        body main .mainSection-2 .container .row .col-4 .cont .bodyCont .text {
+          font-size: 1.125em;
+          color: #4c4c4c; }
+        body main .mainSection-2 .container .row .col-4 .cont .bodyCont .link {
+          display: block;
+          text-align: center;
+          font-size: 1.25em;
+          background-color: #0088cc;
+          color: #fff;
+          padding: 7px 0;
+          margin-bottom: 0; }
+          body main .mainSection-2 .container .row .col-4 .cont .bodyCont .link:hover {
+            text-decoration: none;
+            background-color: #006baf; }
+  body main .mainSection-3 .container .row {
+    margin-bottom: 20px; }
+    body main .mainSection-3 .container .row .mainTitle {
+      margin-bottom: 0;
+      color: #0088cc;
+      line-height: 0.8; }
+    body main .mainSection-3 .container .row .text {
+      font-size: 1.625em;
+      text-align: center; }
+    body main .mainSection-3 .container .row .col-5 #accordion, body main .mainSection-3 .container .row .col-5 #accordion-2 {
+      padding: 10px 20px 0 20px;
+      background-color: #F7F7F7;
+      border-radius: 3px; }
+      body main .mainSection-3 .container .row .col-5 #accordion .card, body main .mainSection-3 .container .row .col-5 #accordion-2 .card {
+        border-radius: 0;
+        margin-bottom: 0;
+        border: 0;
+        color: #000; }
+        body main .mainSection-3 .container .row .col-5 #accordion .card .card-header .card-link, body main .mainSection-3 .container .row .col-5 #accordion-2 .card .card-header .card-link {
+          width: 100%;
+          display: block;
+          color: #000;
+          font-size: 1.125em;
+          line-height: 1; }
+      body main .mainSection-3 .container .row .col-5 #accordion .end .card-header, body main .mainSection-3 .container .row .col-5 #accordion-2 .end .card-header {
+        border: 0; }
+  body main .mainSection-4 {
+    color: #000; }
+    body main .mainSection-4 .container .row .col-6 .contact {
+      font-size: 2.5em;
+      font-family: "Gilroy ExtraBold", sans-serif;
+      margin-bottom: 100px; }
+    body main .mainSection-4 .container .row .col-6 .address {
+      list-style-type: none;
+      padding-left: 0; }
+      body main .mainSection-4 .container .row .col-6 .address .addressIn {
+        font-size: 1.25em;
+        border-bottom: 1px solid #e1e1e1;
+        line-height: 3; }
+        body main .mainSection-4 .container .row .col-6 .address .addressIn a {
+          color: #414141;
+          text-decoration: underline; }
+    body main .mainSection-4 .container .row .col-6 form {
+      padding: 10px 40px; }
+      body main .mainSection-4 .container .row .col-6 form .form-control {
+        padding: 10px 10px;
+        margin-bottom: 25px; }
+      body main .mainSection-4 .container .row .col-6 form .btn {
+        margin-top: 10px;
+        border-radius: 50px;
+        background-color: #0074E4;
+        color: #fff;
+        padding: 10px 20px; }
+  body footer {
+    padding-top: 120px;
+    padding-bottom: 20px;
+    color: #000; }
+    body footer .container .row .col-12 .foot {
+      list-style-type: none;
+      padding-left: 0;
+      display: block;
+      text-align: center; }
+      body footer .container .row .col-12 .foot .foot-item {
+        display: inline-block;
+        margin: 15px 15px;
+        margin-top: 40px; }
+        body footer .container .row .col-12 .foot .foot-item a {
+          color: #000;
+          font-size: 1.125em; }
+    body footer .container .row .col-12 p {
+      text-align: center;
+      margin-bottom: 30px; }
+    body footer .container .row .col-12 .pos {
+      text-align: center;
+      color: #000;
+      text-decoration: underline; }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  body {
+    font-size: 13px; }
+    body header .section-2 .row {
+      padding-top: 180px; }
+      body header .section-2 .row .col-12 .firstSec-2 {
+        width: 50%; }
+        body header .section-2 .row .col-12 .firstSec-2 .imgDad {
+          width: 100%; }
+          body header .section-2 .row .col-12 .firstSec-2 .imgDad img {
+            width: 100%;
+            height: auto; }
+    body main .mainSection-1 .container .row .col-12 .link {
+      font-size: 1em;
+      width: 41%; }
+    body main .mainSection-2 .container .row .col-4 {
+      margin-bottom: 0;
+      height: 340px; } }
+@media only screen and (max-width: 991px) and (min-width: 830px) {
+  body header {
+    background-size: 115% auto; } }
+@media only screen and (max-width: 1199px) and (min-width: 1080px) {
+  body header {
+    background-size: 115% auto; } }
+@media only screen and (max-width: 991px) {
+  body {
+    font-size: 12px; }
+    body header .nav .container .row .col-md-12 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+      font-size: 1.26em;
+      padding-right: 0;
+      padding-left: 0; }
+    body header .nav .container .row .col-md-12 .navbar .navbar-collapse .float-right .nav-item .nav-link {
+      font-size: 1em; }
+    body header .section-2 .row {
+      padding-top: 180px; }
+      body header .section-2 .row .col-12 .firstSec-2 {
+        width: 50%; }
+        body header .section-2 .row .col-12 .firstSec-2 .imgDad {
+          width: 100%; }
+          body header .section-2 .row .col-12 .firstSec-2 .imgDad img {
+            width: 100%;
+            height: auto; }
+    body header .section-2 .row .col-12 .secondSec-2 {
+      margin-top: 40px; }
+    body header .section-3 .row .col-4 img, body body header .sec .row .col-4 img {
+      height: 150px; }
+    body main .mainSection-1 .container .row .col-5 .title {
+      font-size: 3.7em; }
+    body main .mainSection-1 .container .row .col-5 .cont {
+      font-size: 11px; }
+    body main .mainSection-1 .container .row .col-5 .cont .contTitle {
+      font-size: 1.8em; }
+    body main .mainSection-1 .container .row .col-12 {
+      font-size: 1.5em; }
+    body main .mainSection-1 .container .row .col-12 .link {
+      font-size: 0.9em;
+      width: 48%; }
+    body main .mainSection-2 .container .row .col-4 {
+      margin-bottom: 0; }
+    body main .mainSection-2 .container .row .col-4 .cont .headCont {
+      margin-bottom: 0; }
+    body main .mainSection-2 .container .row .col-4 .cont .headCont .imgCircle {
+      width: 50px;
+      height: 50px;
+      margin-right: 5px; } }
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 11px; }
+    body header .nav .container .row .col-md-12 .navbar .navbar-collapse {
+      background: #fff;
+      z-index: 99; }
+    body header .nav .container .row .col-md-12 .navbar .navbar-collapse .float-right .nav-item .nav-link {
+      color: #0088cc; }
+      body header .nav .container .row .col-md-12 .navbar .navbar-collapse .float-right .nav-item .nav-link p {
+        color: #0088cc; }
+    body header .nav .container .row .col-md-12 .navbar .navbar-toggler {
+      border: 0; }
+    body header .sticky .container .row .col-md-12 .navbar .navbar-toggler .fa-bars, body header .nav .container .row .col-md-12 .navbar .navbar-toggler .fa-bars {
+      font-weight: 600;
+      color: #000; }
+    body header .section-2 .row {
+      padding-top: 180px; }
+      body header .section-2 .row .col-12 .firstSec-2 {
+        width: 50%; }
+        body header .section-2 .row .col-12 .firstSec-2 .imgDad {
+          width: 100%; }
+          body header .section-2 .row .col-12 .firstSec-2 .imgDad img {
+            width: 100%;
+            height: auto; }
+    body header .section-2 .row .col-12 .secondSec-2 {
+      margin-top: 40px;
+      padding: 20px 20px 10px 20px;
+      margin-left: 0;
+      width: 45%; }
+    body header .section-1 {
+      padding-left: 0;
+      padding-right: 0; }
+      body header .section-1 .row {
+        padding-top: 40px; }
+        body header .section-1 .row .col-7 .firstSec .btn-link {
+          margin-left: 40%; }
+        body header .section-1 .row .col-5 {
+          padding-right: 0;
+          padding-left: 0; }
+          body header .section-1 .row .col-5 .secondSec {
+            margin-right: 0; }
+    body header .section-3 .row .col-4 img, body body header .sec .row .col-4 img {
+      height: 120px; }
+    body header .section-4 .row .col-4 img {
+      height: 50px; }
+    body header .section-4 .row .col-4 h5 {
+      font-size: 1.1em; }
+    body header .section-4 .row .col-4 .title {
+      font-size: 1.5em; }
+    body main .mainSection-1 {
+      font-size: 10px; }
+    body main .mainSection-1 .container .row .col-5 .cont .contTitle {
+      font-size: 1.4em;
+      margin: 20px 0; }
+    body main .mainSection-1 .container .row .col-12 {
+      font-size: 1.5em; }
+    body main .mainSection-1 .container .row .col-12 .link {
+      font-size: 0.9em;
+      width: 55%; }
+    body main .mainSection-1 .container .row .col-5 .title {
+      font-size: 3.5em; }
+    body main .mainSection-1 .container .row .col-5 .cont .contText {
+      font-size: 1.2em; }
+    body main .mainSection-1 .container .row .col-5 {
+      padding: 10px; }
+    body main .mainSection-1 .container .row .col-5 .cont b {
+      font-size: 1.5em; }
+    body main .mainSection-2 .container .row .col-4 {
+      margin-bottom: 0;
+      height: 330px; }
+    body main .mainSection-2 .container .row .col-4 .cont {
+      padding: 10px; }
+    body main .mainSection-2 .container .row .col-4 .cont .headCont .info {
+      font-size: 0.9em; }
+    body main .mainSection-2 .container .row .col-4 .cont .headCont {
+      height: 60px; }
+    body main .mainSection-2 .container .row .col-4 .cont .bodyCont .link {
+      font-size: 1em; }
+    body main .mainSection-2 .container .row .col-4 .cont .headCont .imgCircle {
+      width: 40px;
+      height: 40px;
+      margin-right: 5px; }
+    body main .mainSection-3 .container .row .col-5 #accordion,
+    body main .mainSection-3 .container .row .col-5 #accordion-2, body #accordion {
+      padding: 10px 10px 0; }
+    body main .mainSection-3 .container .row .col-5 {
+      padding-left: 5px;
+      padding-right: 5px; }
+    body main .mainSection-4 .container .row .col-6 {
+      padding: 0; }
+    body main .mainSection-4 .container .row .col-6 form {
+      padding: 10px 20px; } }
+@media only screen and (max-width: 720px) {
+  body header .section-1 .row .col-7 .firstSec .btn-link {
+    margin-left: 60%; }
+
+  body header .section-1 .row {
+    padding-top: 10px; } }
+@media only screen and (min-width: 500px) and (max-width: 584px) {
+  body {
+    font-size: 11px; }
+    body main .mainSection-4 .container .row .col-6 {
+      padding-left: 15px;
+      padding-right: 15px; }
+    body header {
+      background-size: auto 15%;
+      overflow: hidden; }
+      body header .section-1 {
+        padding-left: 15px;
+        padding-right: 15px; }
+        body header .section-1 .row {
+          padding-top: 20px; }
+          body header .section-1 .row .col-7 .firstSec .text {
+            color: #000; }
+          body header .section-1 .row .col-7 .firstSec .btn-link {
+            margin-left: 40%; }
+      body header .section-2 .row {
+        padding-top: 100px; }
+        body header .section-2 .row .col-12 .firstSec-2 {
+          width: 100%; }
+        body header .section-2 .row .col-12 .secondSec-2 {
+          width: 100%;
+          font-size: 15px; }
+      body header .section-3 .row .col-4 img {
+        height: 110px; }
+      body header .section-3 .row .col-4 .text {
+        font-size: 1.2em; }
+      body header .section-4 .row .col-4 .text {
+        font-size: 1.1em; }
+    body main .mainSection-1 .container .row .col-12 .link {
+      width: 70%; }
+    body main .mainSection-2 .container .row .col-4 {
+      height: auto; }
+      body main .mainSection-2 .container .row .col-4 .cont .headCont {
+        height: auto; }
+        body main .mainSection-2 .container .row .col-4 .cont .headCont .imgCircle {
+          display: block;
+          width: 60px;
+          height: 60px;
+          margin: 0 auto;
+          float: none;
+          margin-bottom: 10px; }
+        body main .mainSection-2 .container .row .col-4 .cont .headCont .info {
+          margin-bottom: 10px; }
+          body main .mainSection-2 .container .row .col-4 .cont .headCont .info p {
+            font-weight: 700; } }
+@media only screen and (max-width: 499px) {
+  body {
+    font-size: 11px; }
+    body main .mainSection-4 .container .row .col-6 {
+      padding-left: 15px;
+      padding-right: 15px; }
+    body header {
+      background-size: auto 130vw;
+      overflow: hidden; }
+      body header .section-1 {
+        padding-left: 15px;
+        padding-right: 15px; }
+        body header .section-1 .row {
+          padding-top: 20px; }
+          body header .section-1 .row .col-7 .firstSec .text {
+            color: #000; }
+          body header .section-1 .row .col-7 .firstSec .btn-link {
+            margin-left: 40%; }
+      body header .section-2 .row {
+        padding-top: 100px; }
+        body header .section-2 .row .col-12 .firstSec-2 {
+          width: 100%; }
+        body header .section-2 .row .col-12 .secondSec-2 {
+          width: 100%;
+          font-size: 15px; }
+      body header .section-3 .row .col-4 {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        flex: auto; }
+        body header .section-3 .row .col-4 img {
+          height: 130px; }
+        body header .section-3 .row .col-4 .text {
+          font-size: 1.2em; }
+      body header .section-4 .row .col-4 {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        flex: auto;
+        font-size: 13px; }
+        body header .section-4 .row .col-4 .text {
+          font-size: 1.1em; }
+        body header .section-4 .row .col-4 img {
+          height: 70px; }
+    body main .mainSection-1 .container .row .col-12 .link {
+      width: 80%; }
+    body main .mainSection-1 .container .row .col-5 {
+      font-size: 14px;
+      width: 100%;
+      max-width: 100%;
+      flex: auto;
+      margin-left: 0; }
+    body main .mainSection-3 .container .row .col-5 {
+      margin-top: 20px;
+      font-size: 12px;
+      width: 100%;
+      max-width: 100%;
+      flex: auto;
+      margin-left: 0; }
+    body main .mainSection-2 .container .row .col-4 {
+      height: auto;
+      width: 100%;
+      max-width: 100%;
+      flex: auto;
+      display: block; }
+      body main .mainSection-2 .container .row .col-4 .cont .headCont {
+        height: auto; }
+        body main .mainSection-2 .container .row .col-4 .cont .headCont .imgCircle {
+          width: 71px;
+          height: 71px; }
+        body main .mainSection-2 .container .row .col-4 .cont .headCont .info p {
+          font-weight: 700; }
+    body main .mainSection-4 .container .row .col-6 {
+      width: 100%;
+      max-width: 100%;
+      flex: auto;
+      display: block; }
+      body main .mainSection-4 .container .row .col-6 .contact {
+        margin-bottom: 20px; } }
+@media only screen and (min-width: 385px) and (max-width: 430px) {
+  body header {
+    background-size: 120% 7%;
+    overflow: hidden;
+    background-image: url("../img/headBack_sm.png"); }
+  body header .section-1 .row .col-5 {
+    width: 30%;
+    max-width: 30%;
+    flex: auto;
+    margin-left: auto;
+    font-size: 10px; }
+    body header .section-1 .row .col-5 .secondSec img {
+      width: 60px;
+      margin: 0;
+      margin-left: auto;
+      margin-right: 10px; }
+    body header .section-1 .row .col-5 .secondSec a {
+      display: inline-block;
+      text-align: right;
+      padding-right: 10px; } }
+@media only screen and (max-width: 384px) {
+  body header {
+    background-size: 130% 7%;
+    overflow: hidden;
+    background-image: url("../img/headBack_sm.png"); }
+  body header .section-1 .row .col-5 {
+    width: 30%;
+    max-width: 30%;
+    flex: auto;
+    margin-left: auto;
+    font-size: 10px; }
+    body header .section-1 .row .col-5 .secondSec img {
+      width: 60px;
+      margin: 0;
+      margin-left: auto;
+      margin-right: 10px; }
+    body header .section-1 .row .col-5 .secondSec a {
+      display: inline-block;
+      text-align: right;
+      padding-right: 10px; }
+  body header .section-1 .row .col-7 {
+    padding-top: 50px;
+    width: 70%;
+    max-width: 70%;
+    flex: auto; }
+    body header .section-1 .row .col-7 .firstSec .title {
+      font-size: 2em; } }
+
+/*# sourceMappingURL=main.css.map */

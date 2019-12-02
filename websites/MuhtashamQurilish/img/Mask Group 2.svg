@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_18" data-name="Rectangle 18" width="20" height="20" transform="translate(4681 2089)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_2" data-name="Mask Group 2" transform="translate(-4681 -2089)" clip-path="url(#clip-path)">
+    <path id="Path_7" data-name="Path 7" d="M4.375,6.25H3.125V7.5h1.25Zm5-1.25H8.125V6.25h1.25Zm2.5,0h-1.25V6.25h1.25Zm2.5,0h-1.25V6.25h1.25Zm-5-2.5H8.125V3.75h1.25Zm2.5,0h-1.25V3.75h1.25Zm2.5,0h-1.25V3.75h1.25Zm-5,7.5H8.125v1.25h1.25Zm2.5,0h-1.25v1.25h1.25Zm2.5,0h-1.25v1.25h1.25Zm-5,2.5H8.125v1.25h1.25Zm5,0h-1.25v1.25h1.25Zm-5,2.5H8.125v1.25h1.25Zm5,0h-1.25v1.25h1.25Zm-5-7.5H8.125V8.75h1.25Zm2.5,0h-1.25V8.75h1.25Zm2.5,0h-1.25V8.75h1.25Zm-10,1.25H3.125V10h1.25Zm0,2.5H3.125V12.5h1.25Zm0,2.5H3.125V15h1.25Zm0,2.5H3.125V17.5h1.25Zm7.5-3.75h-1.25v1.25h1.25Zm6.25-3.75h-1.25V1.25A1.249,1.249,0,0,0,15.625,0H6.875a1.249,1.249,0,0,0-1.25,1.25v2.5H1.875A1.249,1.249,0,0,0,.625,5V18.75A1.249,1.249,0,0,0,1.875,20h16.25a1.249,1.249,0,0,0,1.25-1.25V10A1.249,1.249,0,0,0,18.125,8.75Zm-12.5,10H1.875V5h3.75Zm10,0h-3.75V15h-1.25v3.75H6.875V1.25h8.75Zm2.5,0h-1.25V17.5h1.25Zm0-2.5h-1.25V15h1.25Zm0-2.5h-1.25V12.5h1.25Zm0-2.5h-1.25V10h1.25Z" transform="translate(4681 2089)" fill="#5b5b5b" fill-rule="evenodd"/>
+  </g>
+</svg>
