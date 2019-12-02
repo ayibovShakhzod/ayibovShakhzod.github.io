@@ -3,6 +3,3 @@
 <br>
 ## I am Frontend developer 
 <p>I am from Uzbekistan</p>
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-```
