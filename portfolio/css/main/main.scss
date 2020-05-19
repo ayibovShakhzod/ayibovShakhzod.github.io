@@ -34,8 +34,8 @@ body {
 
 
 header {
-  overflow-x: hidden;
   @extend .transition-all-03;
+  z-index: 99999;
   .navbar {
     z-index: 999;
     transition: all 0.4s;
