@@ -1,0 +1,330 @@
+/*
+  @version 1
+  @author Ayibjonov Shakhzod ayubjonovshakhzod01@gmail.com
+  @date 25.04.2020
+*/
+
+
+$black: #1F1F25;
+$red: #F9004D;
+$purple: #763AE7;
+$blue: #55ACEE;
+$blue-2: #4D5BED;
+$white: #fff;
+$light-grey: #F5F5F5;
+
+.top-0 {
+  top: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.text-red,
+.text-red-hover:hover {
+  color: $red !important;
+}
+
+.text-black,
+.text-black-hover:hover {
+  color: $black !important;
+}
+
+.text-blue,
+.text-blue-hover:hover {
+  color: $blue !important;
+}
+
+.text-purple,
+.text-purple-hover:hover {
+  color: $purple !important;
+}
+
+.text-blue-2,
+.text-blue-hover-2:hover {
+  color: $blue-2 !important;
+}
+
+.text-white,
+.text-white-hover:hover {
+  color: $white !important;
+}
+
+.background-red,
+.background-red-hover:hover {
+  background-color: $red;
+  @extend .text-white;
+}
+
+.background-black,
+.background-black-hover:hover {
+  background-color: $black;
+  @extend .text-white;
+
+}
+
+.background-blue,
+.background-blue-hover:hover {
+  background-color: $blue;
+  @extend .text-white;
+
+}
+
+.background-purple,
+.background-purple-hover:hover {
+  background-color: $purple;
+  @extend .text-white;
+
+}
+
+.background-blue-2,
+.background-blue-hover-2:hover {
+  background-color: $blue-2;
+  @extend .text-white;
+
+}
+
+.background-white,
+.background-white-hover:hover {
+  background-color: $white;
+}
+
+.background-light-grey,
+.background-light-grey-hover:hover {
+  background-color: $light-grey;
+}
+
+
+.font-lato {
+  font-family: Lato, "Nunito Regular",  sans-serif;
+}
+
+.font-nunito {
+  font-family: "Nunito Regular", Lato, sans-serif;
+
+}
+
+
+.font-weight-100 {
+  font-weight: 100;
+}
+
+.font-weight-200 {
+  font-weight: 200;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-800 {
+  font-weight: 800;
+}
+
+.font-weight-900 {
+  font-weight: 900;
+}
+
+.transition-all-1,
+.transition-all-1-hover:hover {
+  transition: all 1s;
+}
+
+.transition-all-09,
+.transition-all-09-hover:hover {
+  transition: all 0.9s;
+}
+
+.transition-all-08,
+.transition-all-08-hover:hover {
+  transition: all 0.8s;
+}
+
+.transition-all-07,
+.transition-all-07-hover:hover {
+  transition: all 0.7s;
+}
+
+.transition-all-06,
+.transition-all-06-hover:hover {
+  transition: all 0.6s;
+}
+
+.transition-all-05,
+.transition-all-05-hover:hover {
+  transition: all 0.5s;
+}
+
+.transition-all-04,
+.transition-all-04-hover:hover {
+  transition: all 0.4s;
+}
+
+.transition-all-03,
+.transition-all-03-hover:hover {
+  transition: all 0.3s;
+}
+
+.transition-all-02,
+.transition-all-02-hover:hover {
+  transition: all 0.2s;
+}
+
+.transition-all-01,
+.transition-all-01-hover:hover {
+  transition: all 0.1s;
+}
+
+.btn-shak {
+  padding: .75rem 2.5rem;
+  line-height: 100%;
+  height: auto;
+  border-radius: 0;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  border: 2px solid transparent;
+  @extend .font-lato;
+  @extend .transition-all-04;
+  @extend .transition-all-04-hover;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.btn-white-outline {
+  @extend .btn-shak;
+  background-color: transparent;
+  border-color: $white;
+  @extend .background-white-hover;
+  @extend .text-red-hover;
+  @extend .text-white;
+
+
+}
+
+.btn-red {
+  @extend .btn-shak;
+  @extend .background-red;
+  @extend .background-btn-red-hover;
+  @extend .text-white;
+}
+
+.btn-black {
+  @extend .btn-shak;
+  @extend .background-black;
+  @extend .background-btn-black-hover;
+  @extend .text-white;
+}
+
+.btn-rounded {
+  border-radius: 50px;
+}
+
+.min-width-100px {
+  min-width: 100px;
+}
+
+.min-width-110px {
+  min-width: 110px;
+}
+
+.min-width-120px {
+  min-width: 120px;
+}
+
+.v-lines {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  right: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  &__inner {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    width: 390px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+.title {
+  @extend .font-nunito;
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+
+.light-selection {
+  *::selection {
+    @extend .background-black;
+    @extend .text-white;
+  }
+}
+
+.dark-selection {
+  *::selection {
+    @extend .background-light-grey;
+    @extend .text-black;
+  }
+}
+
+.text-decoration-none-hover:hover {
+  text-decoration: none;
+}
+
+.background-btn-red-hover:hover {
+  background-color: darken($red, 5%);
+}
+
+.background-btn-black-hover:hover {
+  background-color: darken($black, 5%);
+}
+
+
+.bg-half-170 {
+  padding: 170px 0;
+  background-size: cover;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  position: relative;
+  background-position: center center;
+}

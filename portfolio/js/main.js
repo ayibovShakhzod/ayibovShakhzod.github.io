@@ -1,70 +1,60 @@
-
-$(document).ready(function(){
-    $('.100').circleProgress({
-        value: 1
-    }).on('circle-animation-progress', function(event, progress) {
-        $(this).find('strong').html(Math.round(100 * progress) + '<i>%</i>');
+jQuery(document).ready(function($){
+    $(".element").each(function(){
+        var $this = $(this);
+        $this.typed({
+            strings: $this.attr('data-elements').split(','),
+            typeSpeed: 150, // typing speed
+            backDelay: 500 // pause before backspacing
+        });
     });
-    $('.90').circleProgress({
-        value: 0.9
-    }).on('circle-animation-progress', function(event, progress) {
-        $(this).find('strong').html(Math.round(90 * progress) + '<i>%</i>');
-    });
-    $('.75').circleProgress({
-        value: 0.75
-    }).on('circle-animation-progress', function(event, progress) {
-        $(this).find('strong').html(Math.round(75 * progress) + '<i>%</i>');
-    });
-    $('.60').circleProgress({
-        value: 0.6
-    }).on('circle-animation-progress', function(event, progress) {
-        $(this).find('strong').html(Math.round(60 * progress) + '<i>%</i>');
-    });
-    $('.30').circleProgress({
-        value: 0.3
-    }).on('circle-animation-progress', function(event, progress) {
-        $(this).find('strong').html(Math.round(30 * progress) + '<i>%</i>');
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        duration: 1000
     });
 
-
-    const colors = ["#2DA5E1", "#D90BE7", "#000", "#FCBC0F", "#F85F36"];
-
-    const numBalls = 50;
-    const balls = [];
-
-    for (let i = 0; i < numBalls; i++) {
-        let ball = document.createElement("div");
-        ball.classList.add("ball");
-        ball.style.background = colors[Math.floor(Math.random() * colors.length)];
-        ball.style.left = `${Math.floor(Math.random() * 100)}%`;
-        ball.style.top = `${Math.floor(Math.random() * 90)}%`;
-        ball.style.transform = `scale(${Math.random()})`;
-        ball.style.width = 20;
-        ball.style.height = ball.style.width;
-
-        balls.push(ball);
-        document.body.append(ball);
-    }
-
-// Keyframes
-    balls.forEach((el, i, ra) => {
-        let to = {
-            x: Math.random() * (i % 2 === 0 ? -11 : 11),
-            y: Math.random() * 12
-        };
-
-    let anim = el.animate(
-        [
-            { transform: "translate(0, 0)" },
-            { transform: `translate(${to.x}rem, ${to.y}rem)` }
-        ],
-        {
-            duration: (Math.random() + 1) * 2000, // random duration
-            direction: "alternate",
-            fill: "both",
-            iterations: Infinity,
-            easing: "ease-in-out"
+    let svgArrowSliderRight ="<i class=\"feather-arrow-right\"></i>"
+    let svgArrowSliderLeft ="<i class=\"feather-arrow-left\"></i>"
+    $('.js-news-slider').owlCarousel({
+        items: 2,
+        loop: true,
+        nav: true,
+        dots: false,
+        autoplay:true,
+        autoplayTimeout:10000,
+        autoplayHoverPause:true,
+        navSpeed: 1000,
+        navText: [svgArrowSliderLeft, svgArrowSliderRight],
+        margin: 30,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 0,
+            },
+            991: {
+                items: 2,
+                nav: true
+            }
         }
-    );
-});
-});
+    });
+    $('.js-meetings-slider').owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        autoplay:true,
+        autoplayTimeout:10000,
+        autoplayHoverPause:true,
+        dots: false,
+        navSpeed: 1000,
+        navText: [svgArrowSliderLeft, svgArrowSliderRight],
+        margin: 30,
+    });
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 50) {
+            $(".sticky").addClass("nav-sticky");
+        } else {
+            $(".sticky").removeClass("nav-sticky");
+        }
+    });
+   });
