@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<div class="content">
+    <div class="con-user">
+        <div class="avatar">
+            <img src="avatar.png" alt="">
+        </div>
+        <div class="title">
+            <h1>
+                @ayibov_shakhzod
+            </h1>
+            <p>
+                Full stack developer
+            </p>
+        </div>
+    </div>
+    <div class="con-menu">
+        <button onclick="handleClick(event, 'con-links')" class="clickBtn active">
+            <i class='bx bx-link'></i>
+            <span>
+                                Links
+                            </span>
+        </button>
+        <button onclick="handleClick(event, 'con-posts')" class="clickBtn">
+            <i class='bx bxl-instagram-alt'></i>
+            <span>
+                                Posts
+                            </span>
+        </button>
+    </div>
+    <div class="con-contents">
+        <div class="con-links">
+            <a target="_blank" href="https://www.instagram.com/ayibov_shakhzod/">
+                <i class='bx bxl-instagram-alt'></i>
+                <span>
+                                Instagram
+                            </span>
+            </a>
+
+            <a target="_blank" href="https://t.me/ShAK0105">
+                <i class='bx bxl-telegram'></i>
+                <span>
+                                Telegram
+                            </span>
+            </a>
+            <a target="_blank" href="#">
+                <i class='bx bxl-telegram'></i>
+                <span>
+                                WwW.Shakhzod
+                            </span>
+            </a>
+            <a target="_blank" href="https://t.me/ShAK0105">
+                <i class='bx bx-mail-send'></i>
+                <span>
+                                Mail
+                            </span>
+            </a>
+
+
+            <a target="_blank" href="https://github.com/ayibovShakhzod">
+                <i class='bx bxl-github'></i>
+                <span>
+                                Github
+                            </span>
+            </a>
+
+
+        </div>
+
+        <div class="con-posts" id="instafeed">
+
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+<script src="instafeed.min.js"></script>
+<script type="text/javascript">
+    const feed = new Instafeed({
+        accessToken: 'IGQVJXR3lqX1pZAX3RnZA292VUZANbjNhcU5kR3hremZANSGVPRzNwdVY1ODNpVWd0ZA1UwdEpXRFlGRXpDY0F6UEdSWEFjNkF6d0VaUFJtMU5vS3BfbVh4QTFXTDFCZA3oyMy1zUWs1Q29tZAGFhaWRyOXZAOYQZDZD',
+
+        limit: 15,
+        template: ' <a class="post" target="_blank" href="{{link}}">\n' +
+            '                        <div class="con-file">\n' +
+            '                            <img src="{{image}}" alt="">\n' +
+            '                        </div>\n' +
+            '\n' +
+            '                        <footer>\n' +
+            '                            <h3>\n' +
+            '                                <i class=\'bx bxl-instagram-alt\'></i>\n' +
+            '                                Instagram\n' +
+            '                            </h3>\n' +
+            '                            <p>\n' +
+            '                               {{caption}}\n' +
+            '                            </p>\n' +
+            '                        </footer>\n' +
+            '\n' +
+            '                        <div class="effect"></div>\n' +
+            '                    </a>'
+    });
+    feed.run();
+</script>
+<script>
+    const user = document.querySelector('.con-user')
+    const menu = document.querySelector('.con-menu')
+    const contents = document.querySelector('.con-contents')
+    const links = document.querySelector('.con-contents .con-links')
+    const posts = document.querySelector('.con-contents .con-posts')
+    window.addEventListener("load", function (event) {
+        const vh = window.innerHeight * 0.01
+        document.documentElement.style.setProperty('--vh', `${vh}px`)
+
+        setTimeout(function () {
+            window.scrollTo(0, 1)
+        }, 0)
+        const h = window.innerHeight - menu.clientHeight - user.clientHeight
+        contents.style.height = `${h}px`
+        links.style.height = `${h}px`
+        posts.style.height = `${h}px`
+    })
+
+
+    contents.addEventListener('scroll', (evt) => {
+        if (evt.target.scrollLeft > window.innerWidth / 2 && evt.target.scrollLeft < window.innerWidth + (window.innerWidth / 2)) {
+            menu.querySelector('button:nth-child(1)').classList.remove('active')
+            menu.querySelector('button:nth-child(2)').classList.add('active')
+            // menu.querySelector('button:nth-child(3)').classList.remove('active')
+        } else if (evt.target.scrollLeft < window.innerWidth / 2) {
+            menu.querySelector('button:nth-child(1)').classList.add('active')
+            menu.querySelector('button:nth-child(2)').classList.remove('active')
+            // menu.querySelector('button:nth-child(3)').classList.remove('active')
+        } else if (evt.target.scrollLeft > window.innerWidth + (window.innerWidth / 2)) {
+            menu.querySelector('button:nth-child(2)').classList.remove('active')
+            // menu.querySelector('button:nth-child(3)').classList.add('active')
+        }
+
+    })
+
+    function handleClick(event, name) {
+        const items = document.querySelector('.clickBtn')
+        // const el = evt.target
+        items.classList.remove('active')
+        event.target.classList.add('active')
+        const elScroll = document.querySelector(`.${name}`)
+        contents.scrollTo(elScroll.offsetLeft, 0)
+    }
+
+
+</script>
+
+
+</html>
