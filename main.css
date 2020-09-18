@@ -26,39 +26,43 @@ body {
     flex-direction: column;
     overflow: hidden;
 }
-.con-user {
+.shak-user {
     padding-top: 10px;
     width: 100%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     background: #100f0f;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 
 }
-.con-user .title {
-    text-align: center;
-    width: 100%;
+.shak-user .title {
+    text-align: left;
+
 }
-.con-user .title h1 {
+.user-name{
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+.shak-user .title h1 {
     font-size: 1.1rem;
-    padding: 0px 0px;
+    padding: 0 0;
 }
-.con-user .title p {
+.shak-user .title p {
     font-size: .9rem;
     opacity: .6;
     padding: 6px 10px;
 }
-.con-user .title p a {
+.shak-user .title p a {
     color: rgb(var(--text));
 }
 .avatar img {
     width: 100px;
     border-radius: 30px;
 }
-.con-menu {
+.shak-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,7 +75,7 @@ body {
     box-shadow: 0px 15px 20px -5px rgba(0,0,0,.08);
     border-radius: 0px 0px 30px 30px;
 }
-.con-menu button {
+.shak-menu button {
     padding: 12px;
     width: calc(50% - 4px);
     border: 0px;
@@ -84,12 +88,12 @@ body {
     border-radius: 16px;
     z-index: 2;
 }
-.con-menu button.active {
+.shak-menu button.active {
     background: #100f0f;
     box-shadow: 0px 5px 25px 0px rgba(0,0,0,.06);
     color: rgb(var(--danger));
 }
-.con-contents {
+.shak-contents {
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
@@ -103,63 +107,69 @@ body {
     position: relative;
     max-width: 500px;
 }
-.con-posts {
+.shak-posts {
     min-width: 100%;
     scroll-snap-align: center;
     overflow: auto;
     padding-bottom: 30px;
     max-width: 500px;
 }
-.con-posts .post {
+.shak-posts .post {
     width: calc(100% - 40px);
     overflow: hidden;
     box-sizing: border-box;
     display: block;
-    margin: 20px;
     position: relative;
-    color: rgb(var(--text));
+    color: #fff;
     border-radius: 30px;
-    background-color: #100f0f;
-    box-shadow: 0 5px 30px 0 rgba(0,0,0,.08);
+    background-color: #141615;
+    margin: 0 20px 20px;
+    /*box-shadow: 0 5px 30px 0 rgba(0,0,0,.08);*/
 }
-.con-file {
+.shak-file {
     width: 100%;
+    padding-bottom: 85%;
 }
-.con-posts .post img {
-    width: 100%;
+.shak-posts .post img {
+    height: 100%;
+    width: auto;
+    min-width: 100%;
+    position: absolute;
+
 }
-.con-posts .post video {
+.shak-posts .post video {
     width: 100%;
     position: absolute;
     top: 50%;
     left: 0px;
     transform: translate(0,-50%);
 }
-.con-posts .post footer {
+.shak-posts .post footer {
     position: absolute;
     bottom: 0px;
     z-index: 10;
     padding: 10px 20px;
 }
-.con-posts .post footer h3 {
+.shak-posts .post footer h3 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-.con-posts .post footer h3 i {
+.shak-posts .post footer h3 i {
     margin-right: 5px;
     font-size: 1.4rem;
 }
-.con-posts .post .effect {
+.shak-posts .post .effect {
     position: absolute;
-    bottom: -10px;
-    height: 160px;
+    bottom: 0;
+    left: 0;
+    height: 50%;
     width: 100%;
     z-index: 9;
-    background: linear-gradient(0deg, rgba(20, 22, 21, 1) 30%, rgba(0,0,0,0.001) 70%);
+    background: linear-gradient(0deg, rgba(16,15,15,1) , rgba(0,0,0,0.001) );
 
 }
-.con-links {
+.shak-links {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -175,7 +185,7 @@ body {
     overflow: auto;
     padding-top: 20px;
 }
-.con-links a {
+.shak-links a {
     display: block;
     width: 100%;
     padding: 18px 22px;
@@ -192,25 +202,42 @@ body {
     box-shadow: 0px 10px 30px 0px rgba(var(--danger), .15);
 }
 
-.con-links a img {
+.shak-links a img {
     max-width: 22px;
     position: absolute;
     left: 20px;
 }
-.con-links a svg {
+.shak-links a svg {
     width: 22px;
     fill: #fff;
     position: absolute;
     left: 20px;
 }
-.con-links a i {
+.shak-links a i {
     font-size: 1.6rem;
     position: absolute;
     left: 20px;
 }
-.con-links a span {
+.shak-links a span {
     text-align: center;
 }
-.con-links a span p {
+.shak-links a span p {
     font-size: .8rem;
+}
+
+
+*::-webkit-scrollbar {
+    width:0.5em;
+}
+
+*::-webkit-scrollbar-track {
+  background: #141615;
+
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color:#100f0f;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px 0px #100f0f;
+    /*outline: 1px solid slategrey;*/
 }
